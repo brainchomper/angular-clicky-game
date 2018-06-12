@@ -1,10 +1,50 @@
 [
   {
     "id": 1,
-    "image": "/clicky/images//beth.jpg"
+    "image": "./images/BirdPerson.png"
   },
   {
     "id": 2,
-    "image": "/clicky/images//birdperson.jpg"
+    "image": "./images/Chris.png"
+	},
+	{
+    "id": 3,
+    "image": "./images/DoofusRick.png"
+	},
+	{
+    "id": 4,
+    "image": "./images/Gazorpazorpfield.png"
+	},
+	{
+    "id": 5,
+    "image": "./images/Jerry.png"
+	},
+	{
+    "id": 6,
+    "image": "./images/linkler.png"
+	},
+	{
+    "id": 7,
+    "image": "./images/Morty.png"
+	},
+	{
+    "id": 8,
+    "image": "./images/MrMeeseeks.png"
+	},
+	{
+    "id": 9,
+    "image": "./images/PencilVester.png"
+	},
+	{
+    "id": 10,
+    "image": "./images/Rick.png"
+	},
+	{
+    "id": 11,
+    "image": "./images/Snuffles.png"
+	},
+	{
+    "id": 12,
+    "image": "./images/Summer.png"
 	}
 ]
