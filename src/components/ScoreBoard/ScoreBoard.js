@@ -5,7 +5,7 @@ import "./ScoreBoard.css";
 const ScoreBoard = props => (
     <div className="stickyScoreBoard">
 		<h5 className="text-white bold text-center">Score<p></p>{props.score}
-		<p></p>Best<p></p>{props.topScore}</h5></div>
+		<hr/>Best<p></p>{props.topScore}</h5></div>
 );
 
 export default ScoreBoard;
