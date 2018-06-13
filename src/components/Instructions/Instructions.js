@@ -7,7 +7,6 @@ const Instructions = props => (
     <p className="lead font-weight-bold">Click on an image to earn points, but don't click the same image twice!</p>
     <p>Written by Kevin Smith</p>
 		<h3 className="text-white bold">{props.message}</h3>
-		<h4 className="text-white bold"> Score: {props.score}, Top Score: {props.topScore}</h4>
   </div>);
 
 export default Instructions;

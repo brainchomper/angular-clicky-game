@@ -1,0 +1,7 @@
+.stickyScoreBoard {
+	padding: 5px;
+	position: fixed;
+	bottom: center;
+	left: 20px;
+	background-color: steelblue;
+}

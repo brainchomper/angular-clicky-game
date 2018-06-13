@@ -6,6 +6,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import characters from "./characters.json";
 import Instructions from "./components/Instructions";
+import ScoreBoard from "./components/ScoreBoard";
 
 
 class App extends Component {
@@ -50,12 +51,13 @@ class App extends Component {
       <div>
         <Navbar />
         <Instructions 
-				message={this.state.message}
-				score={this.state.score}
-				topScore={this.state.topScore}/>
+				message={this.state.message}/>
         {/* Use "reshake" to shake the page on a wrong answer */}
         <Shake h={25} v={10} r={5} q={this.state.shake} dur={650} int={2.6} max={40} fixed={true} fixedStop={false} freez={false}>
-          <Wrapper>
+          <ScoreBoard 
+						score={this.state.score}
+						topScore={this.state.topScore}/>
+					<Wrapper>
             {characters
               .sort((a, b) => 0.5 - Math.random())
               .map(randomCard => (
