@@ -44,14 +44,12 @@ class App extends Component {
       })
     }
   };
-
   // Render the page
   render() {
     return (
       <div>
-        <Navbar />
-        <Instructions 
-				message={this.state.message}/>
+        <Navbar message={this.state.message}/>
+        <Instructions />
         {/* Use "reshake" to shake the page on a wrong answer */}
         <Shake h={25} v={10} r={5} q={this.state.shake} dur={650} int={2.6} max={40} fixed={true} fixedStop={false} freez={false}>
           <ScoreBoard 

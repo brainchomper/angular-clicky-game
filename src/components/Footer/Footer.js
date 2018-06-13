@@ -1,10 +1,15 @@
 import React from "react";
 import "./Footer.css";
 
+// let getYear = () => {
+// 	return new Date().getFullYear();
+// }
+
 // Footer component
 const Footer = props => (
+
     <div class="footer-copyright py-3 text-center text-white">
-        &copy; Kevin Smith 2018
+        &copy; 2018 Kevin Smith
     </div>
 );
 
