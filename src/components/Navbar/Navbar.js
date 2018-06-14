@@ -3,9 +3,9 @@ import "./Navbar.css";
 
 const Navbar = props => (
 	<nav className="navbar fixed-top navbar-dark navbar-custom p-3">
-		<span className="navbar-brand">React Clicky Game</span>
+		<a className="navbar-text text-white" href="https://kvnsmith.com/portfolio">Portfolio</a>
 		<span className="navbar-text text-white bold animated bounceIn">{props.message}</span>
-		<a className="navbar-text text-white" href="http://kvnsmith.com/portfolio">Kevin Smith's Portfolio</a>
+		<a className="navbar-text text-white" href="https://github.com/brainchomper/react-clicky-game">Repo</a>
 	</nav>
 );
 

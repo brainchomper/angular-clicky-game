@@ -14,7 +14,7 @@ class App extends Component {
 	// Set our state variables
 	state = {
 		guessArray: [],
-		message: "Click an image to begin!",
+		message: "Click image to begin!",
 		score: 0,
 		topScore: 0,
 		shake: 0
@@ -42,7 +42,7 @@ class App extends Component {
 				score: ++score,
 				shake: 0
 			}, () => {
-				if (this.state.score > 11) {
+				if (this.state.score === 12) {
 					this.setState({
 						message: "You Won!",
 						topScore: Math.max(this.state.score, this.state.topScore),
