@@ -19,7 +19,6 @@ class App extends Component {
 		topScore: 0,
 		shake: 0
 	};
-
 	// Card is clicked
 	clickCard = card => {
 		let guessArray = this.state.guessArray;
@@ -34,16 +33,26 @@ class App extends Component {
 				shake: 0.55      // Shake screen for 0.75 seconds
 			})
 			// Otherwise it was a good guess!
-		} else {
+		}
+		else {
 			guessArray[card.id] = true;
 			this.setState({
 				message: "Good Job!",
 				guessArray: guessArray,
 				score: ++score,
 				shake: 0
+			}, () => {
+				if (this.state.score > 11) {
+					this.setState({
+						message: "You Won!",
+						topScore: Math.max(this.state.score, this.state.topScore),
+						guessArray: [],
+						score: 0,
+					})
+				}
 			})
 		}
-	};
+	}
 	// Render the page
 	render() {
 		return (
