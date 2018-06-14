@@ -8,7 +8,7 @@ import "./Footer.css";
 // Footer component
 const Footer = props => (
 
-    <div class="footer-copyright py-3 text-center text-white">
+    <div className="footer-copyright py-3 text-center text-white">
         &copy; 2018 Kevin Smith
     </div>
 );
